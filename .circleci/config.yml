@@ -21,7 +21,7 @@ jobs:
   cloud-gateway:
     docker:
 #     - image: circleci/openjdk:8u242-jdk
-     - image: cimg/node:17.8.0
+     - image: cimg/base:stable
     working_directory: ~/spring-petclinic-msa/cloud-gateway
     steps:
       - build-service:
