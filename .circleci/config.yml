@@ -73,11 +73,11 @@ commands:
           command: docker login -u $DOCKER_USER -p $DOCKER_PASS
 
       # Download and cache dependencies
-      - restore_cache:
-          keys:
-            - << parameters.service-name >>-{{ checksum "pom.xml"}}
+      #- restore_cache:
+      #    keys:
+      #      - << parameters.service-name >>-{{ checksum "pom.xml"}}
 
-      - run: mvn dependency:go-offline
+      #- run: mvn dependency:go-offline
 
       - save_cache:
           paths:
