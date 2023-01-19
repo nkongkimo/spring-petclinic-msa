@@ -89,7 +89,7 @@
                         <repository>${docker.image.prefix}/${project.artifactId}</repository>
                         <contextDirectory>${basedir}</contextDirectory>
                         <tag>${docker.image.tag}</tag>
-                        <!-- 注意在本地.m2/settings.xml中设置dockerhub账号和密码 -->
+                        <!-- 注意在本地.m2/settings.xml中设置dockerhub帳號和密碼 -->
                         <useMavenSettingsForAuth>${dockerfile.maven.settings.auth}</useMavenSettingsForAuth>
                         <buildArgs>
                             <ARTIFACT_NAME>target/${project.build.finalName}</ARTIFACT_NAME>
