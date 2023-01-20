@@ -61,8 +61,9 @@ commands:
       service-name:
         type: string
     steps:
+      # git pull
       - checkout:
-          path: nkongkimo/spring-petclinic-msa
+          path: ~/spring-petclinic-msa
 
       - setup_remote_docker
 
@@ -75,3 +76,8 @@ commands:
 
       # push docker image to docker hub
       - run: mvn dockerfile:push -Ddocker.image.tag=Build-${CIRCLE_BUILD_NUM}-CI
+
+      # store raw content of src code
+      - store_artifacts:
+          path: target/classes
+          destination: spring-petclinic-<< parameters.service-name >>
