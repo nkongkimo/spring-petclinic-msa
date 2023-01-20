@@ -74,7 +74,7 @@ commands:
 
       - run:
           name: Login to Dockerhub
-          command: docker login -u nkongkimo -p 1qaz@WSX!!@@
+          command: docker login -u $DOCKER_USER -p $DOCKER_PASS
 
       # Download and cache dependencies
       - restore_cache:
