@@ -93,5 +93,3 @@ commands:
       - store_artifacts:
           path: target/classes
           destination: spring-petclinic-<< parameters.service-name >>
-
-# demo-01
