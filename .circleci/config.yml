@@ -69,7 +69,7 @@ commands:
 
       - run:
           name: Login to Dockerhub
-          command: docker login -u $EDOCKER_USR -p $DOCKER_PASS
+          command: docker login -u $DOCKER_USR -p $DOCKER_PASS
 
       # Download and cache dependencies
       - restore_cache:
