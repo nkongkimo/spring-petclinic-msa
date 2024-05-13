@@ -8,4 +8,4 @@ EXPOSE ${EXPOSED_PORT}
 # ENTRYPOINT ["java", "-XX:+UnlockExperimentalVMOptions", "-XX:+UseCGroupMemoryLimitForHeap", "-XshowSettings:vm", "-Djava.security.egd=file:/dev/./urandom","-jar","/usr/share/app.jar"]
 ENTRYPOINT exec java $JAVA_OPTS  -jar /usr/share/app.jar
 
-# demo-a
+# for circleci visits-service 202405131524

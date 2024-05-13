@@ -10,3 +10,4 @@ ENTRYPOINT exec java $JAVA_OPTS  -jar /usr/share/app.jar
 
 # for circleci demo 202405131436
 # for circleci demo 202405131444
+# for circleci demo 202405131523
