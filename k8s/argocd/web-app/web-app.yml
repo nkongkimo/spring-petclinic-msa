@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: nkongkimo/spring-petclinic-web-app:Build-104-CI
+          image: nkongkimo/spring-petclinic-web-app:Build-148-CI
           env:
             - name: SERVER_PORT
               value: "8080"
